@@ -1,0 +1,36 @@
+IBeszallito interface-t megvalósító osztályok:
+AllamiCeg: Tervezés
+Ujceg: Alapozás,Útépítés
+BaratiCeg: Tervezés,Alapozás,Útépítés,Hídépítés
+Maganszemely: Tervezés,Hídépítés
+KulfoldiCeg: Alapozás,Útépítés,Hídépítés
+IdegenCeg: Tervezés,Útépítés
+IsmertCeg: Alapozás,Hídépítés
+
+A bin\Debug mappában található a projectek.txt és a beszallitok.txt, ezt a 2 fájlt olvassa be a program.
+
+projectek.txt:
+'/' jel választja el egymástól a 3 szegmenst: project neve/project összege/szükséges szakterületek ','-vel elválasztva.
+project neve: Egy string, bármit tartalmazhat, szóközt is tartalmazhat (Pl.: M3 felujjítás).
+project összege: Egy szám, végén egy 'M'-el(!) szóközök nélkül(!), mivel milliókban tartjuk számon az ilyen jellegő projecteket.
+szakterületek: ','-vel elválasztva, szóközök nélkül(!), nagy kezdőbetűvel, pontos megnevezés, ékezetekkel (Tervezés,Alapozás,Útépítés,Hídépítés).
+
+beszallitok.txt:
+'/' jel választja el egymástól a 2 szegmenst: beszállító neve/szakterület
+beszállító neve: Egy string, ékezet nélkül(!), szóközt is tartalmazhat (Pl.: Morro Kft.).
+szakterület: ','-vel elválasztva, szóközök nélkül(!), nagy kezdőbetűvel, pontos megnevezés, ékezetekkel (Tervezés,Alapozás,Útépítés,Hídépítés).
+
+Az általam használt bemenetek a teszteléshez:
+projectek.txt:
+M0 felujjítás/80M/Tervezés,Útépítés
+M3 felujjítás/130M/Tervezés,Útépítés
+Margithíd renováció/200M/Tervezés,Hídépítés
+Fővárosi kátyúzás/1,5M/Alapozás
+
+beszallitok.txt:
+Morro Kft./Tervezés
+Jo ut Kft./Alapozás,Útépítés
+Uj hid Kft./Hídépítés,Alapozás
+LOL Kft./Alapozás,Tervezés,Útépítés,Hídépítés
+RIP Kft./Tervezés,Útépítés
+K Kft./Tervezés,Útépítés
